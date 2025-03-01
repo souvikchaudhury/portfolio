@@ -1108,3 +1108,25 @@ footer {
       max-width: 150px;
     }
 }
+
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    height: 40px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover .logo-image {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .logo-image {
+        height: 35px;
+    }
+}
