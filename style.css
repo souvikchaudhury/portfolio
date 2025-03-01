@@ -763,6 +763,72 @@ footer {
     .section-title {
         font-size: 2rem;
     }
+
+    .hero .container {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 60px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hero-content {
+        width: 100%;
+        padding: 0 20px;
+        text-align: center;
+        order: 2;
+    }
+
+    .hero-image {
+        width: 100%;
+        max-width: 200px;
+        margin: 0 auto 30px;
+        order: 1;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .hero-subtitle {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .hero-text {
+        font-size: 1rem;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        margin: 20px auto;
+    }
+
+    /* Fix for mobile menu icon */
+    .mobile-toggle {
+        margin-right: 10px;
+    }
+
+    /* Adjust header height for mobile */
+    .header-container {
+        padding: 15px;
+    }
+
+    /* Ensure proper spacing for the SC logo */
+    .logo {
+        margin-left: 10px;
+    }
+    .official-app-store-buttons {
+        justify-content: center;
+    }
+    
+    .store-button img {
+        height: 35px;
+    }
 }
 
 
@@ -1012,4 +1078,33 @@ footer {
 
 .store-button img {
     height: 40px;
+}
+
+
+
+@media (max-width: 480px) {
+    .hero-title {
+      font-size: 2rem;
+    }
+  
+    .hero-subtitle {
+      font-size: 1.1rem;
+    }
+  
+    .hero-buttons {
+      flex-direction: column;
+      gap: 10px;
+      width: 80%;
+      margin: 20px auto;
+    }
+  
+    .btn {
+      width: 100%;
+      text-align: center;
+    }
+  
+    /* Adjust hero image size for very small screens */
+    .hero-image {
+      max-width: 150px;
+    }
 }
